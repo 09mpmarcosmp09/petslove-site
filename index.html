@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campanha de Vacinação - Petslove</title>
+
+  <!-- Fontes personalizadas -->
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Henny+Penny&family=Honk&family=Permanent+Marker&family=Rubik+Moonrocks&display=swap" rel="stylesheet" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Menu fixo -->
+  <header class="menu-topo">
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#inscricao">Inscrição</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner principal -->
+  <div class="banner-container">
+    <img src="images/campanha-vacinacao.jpg" alt="Banner da Campanha" class="banner-img" />
+  </div>
+
+  <!-- Conteúdo principal -->
+  <main class="conteudo-principal" id="sobre">
+    <section class="informacoes fade-in">
+      <div class="titulo-campanha">
+        <img src="images/icone-coracao.png" alt="Ícone de coração" class="icone-esquerda" />
+        <h1 class="creepster titulo-animado">3ª Campanha de Vacinação</h1>
+      </div>
+
+      <p class="henny-penny-regular nome-clinica">
+        Petslove Clínica
+        <img src="images/icone-coracao.png" alt="Ícone de coração" class="icone-pulso" />
+      </p>
+      <p class="permanent-marker">Dia 15/11 — Às 8:00</p>
+      <p class="permanent-marker">Bairro Casa Branca — Rua São Francisco, 326</p>
+    </section>
+
+    <section class="descricao fade-in">
+      <h2 class="rubik-moonrocks">Sobre a Campanha</h2>
+      <p class="rubik-moonrocks">Participe da nossa campanha de vacinação para cães e gatos. Proteja quem você ama!</p>
+    </section>
+
+    <section class="formulario fade-in" id="inscricao">
+      <h2 class="honk">Inscreva seu Pet</h2>
+      <form action="#" method="post">
+        <label for="nome">Nome do Tutor:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="pet">Nome do Pet:</label>
+        <input type="text" id="pet" name="pet" required />
+
+        <label for="tipo">Tipo de Animal:</label>
+        <select id="tipo" name="tipo">
+          <option value="cachorro">Cachorro</option>
+          <option value="gato">Gato</option>
+          <option value="outro">Outro</option>
+        </select>
+
+        <label for="email">E-mail para contato:</label>
+        <input type="email" id="email" name="email" required />
+
+        <button type="submit">Enviar Inscrição</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="rodape" id="contato">
+    <p class="permanent-marker">&copy; 2025 - Petslove Clínica</p>
+    <button onclick="document.body.classList.toggle('dark-mode')">🌙 Modo Escuro</button>
+  </footer>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a href="https://wa.me/5511960916145?text=Olá%2C%20quero%20saber%20mais%20sobre%20a%20campanha%20de%20vacinação%20da%20Petslove!" 
+     class="whatsapp-btn" 
+     target="_blank" 
+     aria-label="Fale conosco pelo WhatsApp">
+    <img src="images/whatsapp-icon.png" alt="WhatsApp" />
+  </a>
+
+  <!-- Botão voltar ao topo -->
+  <a href="#" class="top-btn" title="Voltar ao topo">↑</a>
+
+</body>
+</html>
